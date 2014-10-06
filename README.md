@@ -100,7 +100,7 @@ You will find you are back at clean directory, where you last committed.
 Make a branch to keep all your changes:
 
 ```bash
-git checkout my-working-branch
+git branch my-working-branch
 ```
 
 Make sure you've got the latest version from GitHub
