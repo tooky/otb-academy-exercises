@@ -1,4 +1,19 @@
 class Bottles
+  module VerseFactory
+    refine Fixnum do
+      def to_verse
+        case self
+        when 0
+          Verse0.new(self)
+        when 1
+          Verse1.new(self)
+        else
+          Verse.new(self)
+        end
+      end
+    end
+  end
+
   def sing
     verses(99,0)
   end
