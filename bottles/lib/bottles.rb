@@ -79,6 +79,9 @@ class Bottles
   end
 
   class Verse0 < Verse
+    def action
+      "Go to the store and buy some more"
+    end
   end
 
 end
