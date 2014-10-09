@@ -72,7 +72,4 @@ class Bottles
     Remaining.new(remaining).action
   end
 
-  def pronoun(remaining)
-    Remaining.new(remaining).pronoun
-  end
 end
