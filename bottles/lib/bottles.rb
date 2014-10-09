@@ -10,8 +10,8 @@ class Bottles
   end
 
   def verse(remaining)
-    remains = Verse.new(remaining)
-    remains_next = Verse.new(remains.next_remaining)
+    remains = verse_for(remaining)
+    remains_next = verse_for(remains.next_remaining)
 
     "#{remains.count.capitalize} #{ remains.container } of beer on the wall, #{remains.count} #{ remains.container } of beer.\n" <<
       "#{remains.action}, #{remains_next.count} #{ remains_next.container } of beer on the wall.\n"
