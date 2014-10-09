@@ -19,6 +19,10 @@ class Bottles
 
   private
 
+  def verse_for(remaining)
+    Verse.new(remaining)
+  end
+
   class Verse
 
     attr_reader :remaining
