@@ -21,8 +21,8 @@ class Bottles
       "#{remaining} bottles of beer on the wall, #{remaining} bottles of beer.\n" <<
         "Take one down and pass it around, #{remaining - 1} bottle of beer on the wall.\n"
     else
-      "#{remaining} #{ subject(remaining) } of beer on the wall, #{remaining} bottles of beer.\n" <<
-        "Take one down and pass it around, #{remaining - 1} bottles of beer on the wall.\n"
+      "#{remaining} #{ subject(remaining) } of beer on the wall, #{remaining} #{ subject(remaining) } of beer.\n" <<
+        "Take one down and pass it around, #{remaining - 1} #{ subject(remaining) } of beer on the wall.\n"
     end
   end
 
