@@ -69,6 +69,10 @@ class Bottles
   end
 
   def count(remaining)
+    Remaining.new(remaining).count
+  end
+
+  def count(remaining)
     if remaining.zero?
       "no more"
     else
