@@ -11,6 +11,8 @@ class Bottles
 
   def verse(remaining)
     remains = Remaining.new(remaining)
+    remains_next = Remaining.new(remains.next_remaining)
+
     remaining_next = next_remaining(remaining)
     "#{remains.count.capitalize} #{ remains.container } of beer on the wall, #{remains.count} #{ remains.container } of beer.\n" <<
       "#{remains.action}, #{count(remaining_next)} #{ container(remaining_next) } of beer on the wall.\n"
