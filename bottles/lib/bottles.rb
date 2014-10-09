@@ -53,4 +53,12 @@ class Bottles
       "one"
     end
   end
+
+  def action(remaining)
+    if remaining.zero?
+      "Go to the store and buy some more"
+    else
+      "Take #{pronoun(remaining)} down and pass it around"
+    end
+  end
 end
