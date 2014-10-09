@@ -78,6 +78,10 @@ class Bottles
     def action
       "Go to the store and buy some more"
     end
+
+    def count
+      "no more"
+    end
   end
 
 end
