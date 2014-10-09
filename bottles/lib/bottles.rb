@@ -42,19 +42,19 @@ class Bottles
     end
   end
 
-  def pronoun(remaining)
-    if remaining == 1
-      "it"
-    else
-      "one"
-    end
-  end
-
   def action(remaining)
     if remaining.zero?
       "Go to the store and buy some more"
     else
       "Take #{pronoun(remaining)} down and pass it around"
+    end
+  end
+
+  def pronoun(remaining)
+    if remaining == 1
+      "it"
+    else
+      "one"
     end
   end
 end
