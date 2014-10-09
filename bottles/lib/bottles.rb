@@ -13,7 +13,7 @@ class Bottles
     remains = Remaining.new(remaining)
     remaining_next = next_remaining(remaining)
     "#{remains.count.capitalize} #{ remains.container } of beer on the wall, #{remains.count} #{ remains.container } of beer.\n" <<
-      "#{action(remaining)}, #{count(remaining_next)} #{ container(remaining_next) } of beer on the wall.\n"
+      "#{remains.action}, #{count(remaining_next)} #{ container(remaining_next) } of beer on the wall.\n"
   end
 
   private
