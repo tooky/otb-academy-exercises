@@ -72,14 +72,6 @@ class Bottles
     Remaining.new(remaining).next_remaining
   end
 
-  def next_remaining(remaining)
-    if remaining.zero?
-      99
-    else
-      remaining - 1
-    end
-  end
-
   def container(remaining)
     Remaining.new(remaining).container
   end
