@@ -48,6 +48,10 @@ class Bottles
       @verse_number = verse_number
     end
 
+    def next_verse
+      next_verse_number.to_verse
+    end
+
     def next_verse_number
       verse_number - 1
     end
