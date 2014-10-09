@@ -36,11 +36,7 @@ class Bottles
     end
 
     def next_verse_number
-      if verse_number.zero?
-        99
-      else
-        verse_number - 1
-      end
+      verse_number - 1
     end
 
     def container
