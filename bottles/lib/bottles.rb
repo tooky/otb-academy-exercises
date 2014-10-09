@@ -14,6 +14,8 @@ class Bottles
     end
   end
 
+  using VerseFactory
+
   def sing
     verses(99,0)
   end
@@ -35,14 +37,7 @@ class Bottles
   private
 
   def verse_for(verse_number)
-    case verse_number
-    when 0
-      Verse0.new(verse_number)
-    when 1
-      Verse1.new(verse_number)
-    else
-      Verse.new(verse_number)
-    end
+    verse_number.to_verse
   end
 
   class Verse
