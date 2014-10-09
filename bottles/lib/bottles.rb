@@ -32,4 +32,12 @@ class Bottles
       "bottles"
     end
   end
+
+  def count(remaining)
+    if remaining.zero?
+      "no more"
+    else
+      remaining.to_s
+    end
+  end
 end
