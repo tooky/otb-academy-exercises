@@ -11,7 +11,7 @@ class Bottles
 
   def verse(remaining)
     remains = verse_for(remaining)
-    remains_next = verse_for(remains.next_remaining)
+    remains_next = verse_for(remains.next_verse_number)
 
     "#{remains.count.capitalize} #{ remains.container } of beer on the wall, #{remains.count} #{ remains.container } of beer.\n" <<
       "#{remains.action}, #{remains_next.count} #{ remains_next.container } of beer on the wall.\n"
@@ -32,10 +32,6 @@ class Bottles
     end
 
     def next_verse_number
-      next_remaining
-    end
-
-    def next_remaining
       if remaining.zero?
         99
       else
