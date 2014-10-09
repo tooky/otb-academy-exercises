@@ -80,4 +80,8 @@ class Bottles
     end
   end
 
+  class Verse1 < Verse
+
+  end
+
 end
