@@ -25,6 +25,14 @@ class Bottles
       @remaining = remaining
     end
 
+    def next_remaining
+      if remaining.zero?
+        99
+      else
+        remaining - 1
+      end
+    end
+
     def container
       case remaining
       when 1
