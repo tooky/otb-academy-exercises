@@ -35,7 +35,6 @@ describe "singing 99 bottles of beer" do
   end
 
   it "can sing the whole song" do
-    skip
     expect( song.sing ).to eq( song.verses(99, 0) )
   end
 end

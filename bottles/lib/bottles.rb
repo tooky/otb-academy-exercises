@@ -1,4 +1,8 @@
 class Bottles
+  def sing
+    verses(99,0)
+  end
+
   def verses(start, finish)
     start.downto(finish).map { |remaining|
       verse(remaining) << "\n"
