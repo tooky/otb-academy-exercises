@@ -78,6 +78,10 @@ class Bottles
     def count
       "no more"
     end
+
+    def next_verse_number
+      99
+    end
   end
 
 end
