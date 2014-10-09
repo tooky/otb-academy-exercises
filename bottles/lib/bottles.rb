@@ -43,10 +43,6 @@ class Bottles
       next_verse_number.to_verse
     end
 
-    def next_verse_number
-      verse_number - 1
-    end
-
     def container
       "bottles"
     end
@@ -61,6 +57,12 @@ class Bottles
 
     def pronoun
       "one"
+    end
+
+    private
+
+    def next_verse_number
+      verse_number - 1
     end
 
   end
