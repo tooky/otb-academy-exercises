@@ -10,7 +10,7 @@ class Bottles
   end
 
   def verse(remaining)
-    remaining_next = remaining - 1
+    remaining_next = next_remaining(remaining)
     case remaining
     when 0
       "No more #{ subject(remaining) } of beer on the wall, no more #{ subject(remaining) } of beer.\n" <<
@@ -21,7 +21,7 @@ class Bottles
     end
   end
 
-  def next(remaining)
+  def next_remaining(remaining)
     if remaining.zero?
       99
     else
