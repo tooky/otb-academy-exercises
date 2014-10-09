@@ -69,6 +69,10 @@ class Bottles
   end
 
   def action(remaining)
+    Remaining.new(remaining).action
+  end
+
+  def action(remaining)
     if remaining.zero?
       "Go to the store and buy some more"
     else
