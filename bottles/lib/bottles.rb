@@ -27,6 +27,10 @@ class Bottles
   end
 
   def subject(remaining)
-    "bottles"
+    case remaining
+    when 1
+    else
+      "bottles"
+    end
   end
 end
