@@ -17,6 +17,24 @@ class Bottles
 
   private
 
+  class Remaining
+
+    attr_reader :remaining
+
+    def initialize(remaining)
+      @remaining = remaining
+    end
+
+    def pronoun
+      if remaining == 1
+        "it"
+      else
+        "one"
+      end
+    end
+
+  end
+
   def next_remaining(remaining)
     if remaining.zero?
       99
