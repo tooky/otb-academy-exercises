@@ -71,12 +71,4 @@ class Bottles
   def pronoun(remaining)
     Remaining.new(remaining).pronoun
   end
-
-  def pronoun(remaining)
-    if remaining == 1
-      "it"
-    else
-      "one"
-    end
-  end
 end
