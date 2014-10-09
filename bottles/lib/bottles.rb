@@ -24,10 +24,7 @@ class Bottles
   end
 
   def verse(verse_number)
-    verse = verse_number.to_verse
-    next_verse = verse.next_verse
-
-    verse.to_s
+    verse_number.to_verse.to_s
   end
 
   class Verse
