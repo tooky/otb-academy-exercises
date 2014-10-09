@@ -74,4 +74,7 @@ class Bottles
 
   end
 
+  class Verse0 < Verse
+  end
+
 end
