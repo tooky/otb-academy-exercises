@@ -11,8 +11,8 @@ class Bottles
 
   def verse(remaining)
     remaining_next = next_remaining(remaining)
-    "#{count(remaining).capitalize} #{ subject(remaining) } of beer on the wall, #{count(remaining)} #{ subject(remaining) } of beer.\n" <<
-      "#{action(remaining)}, #{count(remaining_next)} #{ subject(remaining_next) } of beer on the wall.\n"
+    "#{count(remaining).capitalize} #{ container(remaining) } of beer on the wall, #{count(remaining)} #{ container(remaining) } of beer.\n" <<
+      "#{action(remaining)}, #{count(remaining_next)} #{ container(remaining_next) } of beer on the wall.\n"
   end
 
   private
@@ -25,7 +25,7 @@ class Bottles
     end
   end
 
-  def subject(remaining)
+  def container(remaining)
     case remaining
     when 1
       "bottle"
