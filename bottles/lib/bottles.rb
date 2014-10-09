@@ -25,6 +25,15 @@ class Bottles
       @remaining = remaining
     end
 
+    def container
+      case remaining
+      when 1
+        "bottle"
+      else
+        "bottles"
+      end
+    end
+
     def count
       if remaining.zero?
         "no more"
