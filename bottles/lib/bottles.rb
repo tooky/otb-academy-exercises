@@ -27,7 +27,7 @@ class Bottles
   end
 
   def verse(verse_number)
-    verse = verse_for(verse_number)
+    verse = verse_number.to_verse
     next_verse = verse.next_verse
 
     "#{verse.count.capitalize} #{ verse.container } of beer on the wall, #{verse.count} #{ verse.container } of beer.\n" <<
