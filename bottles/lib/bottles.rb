@@ -25,6 +25,14 @@ class Bottles
       @remaining = remaining
     end
 
+    def count
+      if remaining.zero?
+        "no more"
+      else
+        remaining.to_s
+      end
+    end
+
     def action
       if remaining.zero?
         "Go to the store and buy some more"
