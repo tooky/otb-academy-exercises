@@ -72,15 +72,6 @@ class Bottles
     Remaining.new(remaining).container
   end
 
-  def container(remaining)
-    case remaining
-    when 1
-      "bottle"
-    else
-      "bottles"
-    end
-  end
-
   def count(remaining)
     Remaining.new(remaining).count
   end
