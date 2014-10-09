@@ -10,6 +10,7 @@ class Bottles
   end
 
   def verse(remaining)
+    remaining_next = remaining - 1
     case remaining
     when 0
       "No more bottles of beer on the wall, no more bottles of beer.\n" <<
