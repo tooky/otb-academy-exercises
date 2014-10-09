@@ -4,13 +4,13 @@ class Bottles
   end
 
   def verses(start, finish)
-    start.downto(finish).map { |remaining|
-      verse(remaining) << "\n"
+    start.downto(finish).map { |verse_number|
+      verse(verse_number) << "\n"
     }.join
   end
 
-  def verse(remaining)
-    remains = verse_for(remaining)
+  def verse(verse_number)
+    remains = verse_for(verse_number)
     remains_next = verse_for(remains.next_verse_number)
 
     "#{remains.count.capitalize} #{ remains.container } of beer on the wall, #{remains.count} #{ remains.container } of beer.\n" <<
@@ -19,28 +19,28 @@ class Bottles
 
   private
 
-  def verse_for(remaining)
-    Verse.new(remaining)
+  def verse_for(verse_number)
+    Verse.new(verse_number)
   end
 
   class Verse
 
-    attr_reader :remaining
+    attr_reader :verse_number
 
-    def initialize(remaining)
-      @remaining = remaining
+    def initialize(verse_number)
+      @verse_number = verse_number
     end
 
     def next_verse_number
-      if remaining.zero?
+      if verse_number.zero?
         99
       else
-        remaining - 1
+        verse_number - 1
       end
     end
 
     def container
-      case remaining
+      case verse_number
       when 1
         "bottle"
       else
@@ -49,15 +49,15 @@ class Bottles
     end
 
     def count
-      if remaining.zero?
+      if verse_number.zero?
         "no more"
       else
-        remaining.to_s
+        verse_number.to_s
       end
     end
 
     def action
-      if remaining.zero?
+      if verse_number.zero?
         "Go to the store and buy some more"
       else
         "Take #{pronoun} down and pass it around"
@@ -65,7 +65,7 @@ class Bottles
     end
 
     def pronoun
-      if remaining == 1
+      if verse_number == 1
         "it"
       else
         "one"
