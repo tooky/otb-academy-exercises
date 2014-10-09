@@ -25,7 +25,6 @@ describe "singing 99 bottles of beer" do
   end
 
   it "can sing about no more bottles" do
-    skip
     expected = "No more bottles of beer on the wall, no more bottles of beer.\nGo to the store and buy some more, 99 bottles of beer on the wall.\n"
     expect( song.verse(0) ).to eq( expected )
   end
