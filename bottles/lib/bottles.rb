@@ -14,7 +14,7 @@ class Bottles
     case remaining
     when 0
       "No more #{ subject(remaining) } of beer on the wall, no more #{ subject(remaining) } of beer.\n" <<
-        "Go to the store and buy some more, 99 #{ subject(99) } of beer on the wall.\n"
+        "Go to the store and buy some more, #{count(remaining_next)} #{ subject(remaining_next) } of beer on the wall.\n"
     else
       "#{count(remaining)} #{ subject(remaining) } of beer on the wall, #{count(remaining)} #{ subject(remaining) } of beer.\n" <<
         "Take #{pronoun(remaining)} down and pass it around, #{count(remaining_next)} #{ subject(remaining_next) } of beer on the wall.\n"
