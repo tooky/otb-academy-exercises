@@ -23,6 +23,8 @@ class Bottles
     case verse_number
     when 0
       Verse0.new(verse_number)
+    when 1
+      Verse1.new(verse_number)
     else
       Verse.new(verse_number)
     end
