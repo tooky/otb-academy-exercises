@@ -22,7 +22,7 @@ class Bottles
         "Take one down and pass it around, #{remaining - 1} bottle of beer on the wall.\n"
     else
       "#{remaining} #{ subject(remaining) } of beer on the wall, #{remaining} #{ subject(remaining) } of beer.\n" <<
-        "Take one down and pass it around, #{remaining - 1} #{ subject(remaining) } of beer on the wall.\n"
+        "Take one down and pass it around, #{remaining - 1} #{ subject(remaining - 1) } of beer on the wall.\n"
     end
   end
 
