@@ -31,6 +31,10 @@ class Bottles
       @remaining = remaining
     end
 
+    def next_verse_number
+      next_remaining
+    end
+
     def next_remaining
       if remaining.zero?
         99
