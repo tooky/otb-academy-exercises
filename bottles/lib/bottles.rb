@@ -69,6 +69,10 @@ class Bottles
   end
 
   def container(remaining)
+    Remaining.new(remaining).container
+  end
+
+  def container(remaining)
     case remaining
     when 1
       "bottle"
