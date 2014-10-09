@@ -60,11 +60,7 @@ class Bottles
     end
 
     def pronoun
-      if verse_number == 1
-        "it"
-      else
-        "one"
-      end
+      "one"
     end
 
   end
