@@ -40,4 +40,12 @@ class Bottles
       remaining.to_s
     end
   end
+
+  def pronoun(remaining)
+    if remaining == 1
+      "it"
+    else
+      "one"
+    end
+  end
 end
