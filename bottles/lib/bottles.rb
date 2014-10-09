@@ -59,6 +59,11 @@ class Bottles
       "one"
     end
 
+    def to_s
+      "#{count.capitalize} #{ container } of beer on the wall, #{count} #{ container } of beer.\n" <<
+        "#{action}, #{next_verse.count} #{ next_verse.container } of beer on the wall.\n"
+    end
+
     private
 
     def next_verse_number
