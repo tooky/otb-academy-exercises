@@ -84,7 +84,9 @@ class Bottles
   end
 
   class Verse1 < Verse
-
+    def pronoun
+      "it"
+    end
   end
 
 end
