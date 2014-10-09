@@ -1,4 +1,7 @@
 class Bottles
+  def verses(start, finish)
+  end
+
   def verse(remaining)
     case remaining
     when 0
