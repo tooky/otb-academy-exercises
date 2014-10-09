@@ -72,14 +72,6 @@ class Bottles
     Remaining.new(remaining).count
   end
 
-  def count(remaining)
-    if remaining.zero?
-      "no more"
-    else
-      remaining.to_s
-    end
-  end
-
   def action(remaining)
     Remaining.new(remaining).action
   end
