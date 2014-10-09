@@ -2,14 +2,11 @@ class Bottles
   module VerseFactory
     refine Fixnum do
       def to_verse
-        case self
-        when 0
-          Verse0.new(self)
-        when 1
-          Verse1.new(self)
-        else
-          Verse.new(self)
-        end
+        begin
+          Bottles.const_get("Verse#{self}")
+        rescue NameError
+          Bottles::Verse
+        end.new(self)
       end
     end
   end
