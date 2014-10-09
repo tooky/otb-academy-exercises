@@ -25,4 +25,8 @@ class Bottles
         "Take one down and pass it around, #{remaining - 1} bottles of beer on the wall.\n"
     end
   end
+
+  def subject(remaining)
+    "bottles"
+  end
 end
