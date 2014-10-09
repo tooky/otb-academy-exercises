@@ -34,12 +34,6 @@ class Bottles
       "#{verse.action}, #{next_verse.count} #{ next_verse.container } of beer on the wall.\n"
   end
 
-  private
-
-  def verse_for(verse_number)
-    verse_number.to_verse
-  end
-
   class Verse
 
     attr_reader :verse_number
