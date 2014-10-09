@@ -21,6 +21,14 @@ class Bottles
     end
   end
 
+  def next(remaining)
+    if remaining.zero?
+      99
+    else
+      remaining - 1
+    end
+  end
+
   def subject(remaining)
     case remaining
     when 1
