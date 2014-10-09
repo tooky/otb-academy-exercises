@@ -27,8 +27,7 @@ class Bottles
     verse = verse_number.to_verse
     next_verse = verse.next_verse
 
-    "#{verse.count.capitalize} #{ verse.container } of beer on the wall, #{verse.count} #{ verse.container } of beer.\n" <<
-      "#{verse.action}, #{next_verse.count} #{ next_verse.container } of beer on the wall.\n"
+    verse.to_s
   end
 
   class Verse
