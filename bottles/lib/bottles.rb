@@ -1,5 +1,10 @@
 class Bottles
   def verses(start, finish)
+    verses = []
+    start.downto(finish) do |remaining|
+      verses << "#{verse(remaining)}\n"
+    end
+    verses.join
   end
 
   def verse(remaining)
