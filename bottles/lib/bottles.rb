@@ -80,6 +80,10 @@ class Bottles
   end
 
   class Verse1 < Verse
+    def container
+      "bottle"
+    end
+
     def pronoun
       "it"
     end
