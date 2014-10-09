@@ -15,6 +15,8 @@ class Bottles
       "#{action(remaining)}, #{count(remaining_next)} #{ subject(remaining_next) } of beer on the wall.\n"
   end
 
+  private
+
   def next_remaining(remaining)
     if remaining.zero?
       99
