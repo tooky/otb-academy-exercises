@@ -61,11 +61,7 @@ class Bottles
     end
 
     def action
-      if verse_number.zero?
-        "Go to the store and buy some more"
-      else
-        "Take #{pronoun} down and pass it around"
-      end
+      "Take #{pronoun} down and pass it around"
     end
 
     def pronoun
