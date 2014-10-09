@@ -20,7 +20,8 @@ class Bottles
   private
 
   def verse_for(verse_number)
-    if verse_number.zero?
+    case verse_number
+    when 0
       Verse0.new(verse_number)
     else
       Verse.new(verse_number)
