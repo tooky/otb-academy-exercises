@@ -43,12 +43,7 @@ class Bottles
     end
 
     def container
-      case verse_number
-      when 1
-        "bottle"
-      else
-        "bottles"
-      end
+      "bottles"
     end
 
     def count
