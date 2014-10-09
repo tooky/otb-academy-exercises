@@ -70,20 +70,4 @@ class Bottles
 
   end
 
-  def next_remaining(remaining)
-    Remaining.new(remaining).next_remaining
-  end
-
-  def container(remaining)
-    Remaining.new(remaining).container
-  end
-
-  def count(remaining)
-    Remaining.new(remaining).count
-  end
-
-  def action(remaining)
-    Remaining.new(remaining).action
-  end
-
 end
