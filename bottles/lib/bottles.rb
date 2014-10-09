@@ -53,11 +53,7 @@ class Bottles
     end
 
     def count
-      if verse_number.zero?
-        "no more"
-      else
-        verse_number.to_s
-      end
+      verse_number.to_s
     end
 
     def action
