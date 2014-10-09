@@ -17,7 +17,7 @@ class Bottles
         "Go to the store and buy some more, 99 bottles of beer on the wall.\n"
     when 1
       "#{count(remaining)} #{ subject(remaining) } of beer on the wall, #{count(remaining)} #{ subject(remaining) } of beer.\n" <<
-        "Take it down and pass it around, #{count(remaining_next)} #{ subject(remaining_next) } of beer on the wall.\n"
+        "Take #{pronoun(remaining)} down and pass it around, #{count(remaining_next)} #{ subject(remaining_next) } of beer on the wall.\n"
     else
       "#{count(remaining)} #{ subject(remaining) } of beer on the wall, #{count(remaining)} #{ subject(remaining) } of beer.\n" <<
         "Take #{pronoun(remaining)} down and pass it around, #{count(remaining_next)} #{ subject(remaining_next) } of beer on the wall.\n"
