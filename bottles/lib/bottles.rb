@@ -72,14 +72,6 @@ class Bottles
     Remaining.new(remaining).action
   end
 
-  def action(remaining)
-    if remaining.zero?
-      "Go to the store and buy some more"
-    else
-      "Take #{pronoun(remaining)} down and pass it around"
-    end
-  end
-
   def pronoun(remaining)
     Remaining.new(remaining).pronoun
   end
