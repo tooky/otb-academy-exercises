@@ -22,3 +22,7 @@ alarm.check # this will check the tyre pressure using the sensor
             # notifier
             #
             # notifier.normal_range
+```
+
+The `#on?` interface of the alarm is no longer required - notifiers will be
+responsible for maintaining their signal.
