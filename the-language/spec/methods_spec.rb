@@ -24,7 +24,7 @@ RSpec.describe "methods in ruby" do
     #
     #  a_global_method(4, a_global_method(3), 2)
 
-    expect( eval(code) ).to eq ( __ )
+    expect { eval(code) }.to raise_error( __ )
   end
 
   it "is not possible to call methods with the wrong number of arguments" do
@@ -121,7 +121,7 @@ RSpec.describe "methods in ruby" do
     end
 
     it "can all a private method on the same object" do
-      expect ( an_object.calls_the_private_method ).to eq( __ )
+      expect( an_object.calls_the_private_method ).to eq( __ )
     end
 
     it "raises an error if a private method has an explicit receiver" do
