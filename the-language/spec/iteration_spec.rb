@@ -74,7 +74,7 @@ RSpec.describe "iterating in ruby" do
     expect( result ).to eq( __ )
 
     # Files act like a collection of lines
-    File.open("example_file.txt") do |file|
+    File.open("spec/example_file.txt") do |file|
       upcase_lines = file.map { |line| line.strip.upcase }
       expect( upcase_lines ).to eq( __ )
     end
